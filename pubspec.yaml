@@ -1,7 +1,6 @@
 name: stats_animation
 description: Display your stats with animation
 version: 0.0.1
-author: David Fournier<fournierdavid49@yahoo.fr>
 homepage: https://github.com/Radeonisos/stats_animation
 
 environment:
