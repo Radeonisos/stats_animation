@@ -1,14 +1,39 @@
-# stats_animation
+# Stats Animation
 
-Display yours stats with animation
+Display yours stats with animation. You can use this package on all platform who support Flutter
 
 ## Getting Started
 
-This project is a starting point for a Dart
-[package](https://flutter.dev/developing-packages/),
-a library module containing code that can be shared easily across
-multiple Flutter or Dart projects.
+You can use this package very easily.
 
-For help getting started with Flutter, view our 
-[online documentation](https://flutter.dev/docs), which offers tutorials, 
-samples, guidance on mobile development, and a full API reference.
+You need to add this lines to your `pubspec.yaml` :
+
+```yaml
+dependencie:
+    stats_animation: ^0.0.1
+```
+
+## Usage
+
+```dart
+import 'package:stats_animation/stats_animation.dart';
+```
+
+then you can use the package with a map of String and double (you can adapt all parameters)
+
+```dart
+Scaffold(
+      appBar: AppBar(
+        title: Text('Stats Animated'),
+      ),
+      body: Center(
+          child: StatsAnimation(
+        {
+          'attack': 90,
+          'speed': 100,
+          'defense': 60,
+          'hp': 10,
+        },
+      )),
+    )
+```
