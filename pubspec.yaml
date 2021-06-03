@@ -1,7 +1,8 @@
 name: stats_animation
-description: Display yours stats with animation
+description: Display your stats with animation
 version: 0.0.1
-homepage:
+author: David Fournier<fournierdavid49@yahoo.fr>
+homepage: https://github.com/Radeonisos/stats_animation
 
 environment:
   sdk: ">=2.12.0 <3.0.0"
