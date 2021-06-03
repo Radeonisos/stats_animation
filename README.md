@@ -10,7 +10,7 @@ You need to add this lines to your `pubspec.yaml` :
 
 ```yaml
 dependencie:
-    stats_animation: ^0.0.1
+    stats_animation: ^1.0.0
 ```
 
 ## Usage
