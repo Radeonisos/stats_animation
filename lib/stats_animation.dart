@@ -24,7 +24,7 @@ class StatsAnimation extends StatefulWidget {
 }
 
 class _StatsAnimationState extends State<StatsAnimation> {
-  List<double> widthElements = [];
+  List<double> widthOfStatValues = []; // list element for show stats value
   double maxWidth = 0;
 
   @override
@@ -32,16 +32,19 @@ class _StatsAnimationState extends State<StatsAnimation> {
     super.initState();
     widget.stats.forEach((_, value) {
       if (maxWidth < value) {
-        maxWidth = value;
+        maxWidth = value; // this is the value for the max (example 100%)
       }
-      widthElements.add(0.0);
+      widthOfStatValues.add(
+          0.0); // for each stats, we add element to our List of double with the value 0
     });
     Future.delayed(widget.timeForStart, () {
+      // this function start after timeForStart of the creation of this widget and set the good value of stats to widthElements
       setState(() {
         for (int i = 0; i < widget.stats.length; i++) {
           print(widget.stats.values.elementAt(i));
-          widthElements[i] =
-              widget.widthMax * (widget.stats.values.elementAt(i) / maxWidth);
+          widthOfStatValues[i] = widget.widthMax *
+              (widget.stats.values.elementAt(i) /
+                  maxWidth); // this calculate is for the size of the filled Container
         }
       });
     });
@@ -57,14 +60,13 @@ class _StatsAnimationState extends State<StatsAnimation> {
   List<Widget> getStat() {
     int i = 0;
     return widget.stats.entries.map((e) {
-      print(e.key);
       return Row(
         mainAxisAlignment: widget.mainAxisAlignmentRow,
         children: [
           Container(
             width: widget.widthText,
             child: Text(
-              e.key,
+              e.key, // the text of th stat
               style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
             ),
           ),
@@ -92,8 +94,9 @@ class _StatsAnimationState extends State<StatsAnimation> {
                     color: widget.colorFill,
                     borderRadius: BorderRadius.circular(20),
                   ),
-                  width: widthElements.length > i
-                      ? widthElements[i++]
+                  width: widthOfStatValues.length >
+                          i // this condition fix the bug when you add element to your stats list after the creation of The state
+                      ? widthOfStatValues[i++]
                       : widget.stats.entries.elementAt(i++).value,
                 ),
               )
