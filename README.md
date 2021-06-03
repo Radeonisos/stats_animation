@@ -19,7 +19,7 @@ dependencie:
 import 'package:stats_animation/stats_animation.dart';
 ```
 
-then you can use the package with a map of String and double (you can adapt all parameters)
+then you can use the package with a map of String and double (you can adapt all parameters like Colors, size, aligment etc)
 
 ```dart
 Scaffold(
