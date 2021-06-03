@@ -1,3 +1,3 @@
-## 0.0.1
+## [0.0.1] - 2021-06-03
 
-* TODO: Describe initial release.
+* Init of the animation stats package.
