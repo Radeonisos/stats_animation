@@ -36,9 +36,9 @@ class _MyHomePageState extends State<MyHomePage> {
           'intelligence': 100,
           'vitesse': 60,
           'esquive': 10,
-          'esquive2': 10,
-          'vitesse 1': 60,
-          'intelligence sd': 100,
+          'mental': 10,
+          'souplesse': 60,
+          'endurance': 100,
         },
       )),
     );
