@@ -2,6 +2,8 @@
 
 Display yours stats with animation. You can use this package on all platform who support Flutter
 
+![ScreenShot](/screenshots/Screenshot_1622743833.png)
+
 ## Getting Started
 
 You can use this package very easily.
@@ -10,7 +12,7 @@ You need to add this lines to your `pubspec.yaml` :
 
 ```yaml
 dependencie:
-    stats_animation: ^1.0.0
+    stats_animation: ^1.0.1
 ```
 
 ## Usage
