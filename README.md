@@ -2,10 +2,8 @@
 
 Display yours stats with animation. You can use this package on all platform who support Flutter
 
-![ScreenShot](/screenshots/Screenshot_1622743833.png)
-
 <p>
-    <img src="https://github.com/Radeonisos/stats_animation/blob/master/screenshots/demo_gif.png?raw=true"/>
+    <img src="https://github.com/Radeonisos/stats_animation/blob/master/screenshots/demo_gif.gif?raw=true"/>
     <img src="https://github.com/Radeonisos/stats_animation/blob/master/screenshots/demo_img.png?raw=true"/>
 </p>
 
