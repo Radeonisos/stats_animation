@@ -1,6 +1,6 @@
 name: stats_animation
-description: Display your stats with animation
-version: 1.0.1
+description: Display your stats with animation and design as you want thanks to many parameters
+version: 1.0.2
 homepage: https://github.com/Radeonisos/stats_animation
 
 environment:

@@ -4,6 +4,11 @@ Display yours stats with animation. You can use this package on all platform who
 
 ![ScreenShot](/screenshots/Screenshot_1622743833.png)
 
+<p>
+    <img src="https://github.com/Radeonisos/stats_animation/blob/master/screenshots/demo_gif.png?raw=true"/>
+    <img src="https://github.com/Radeonisos/stats_animation/blob/master/screenshots/demo_img.png?raw=true"/>
+</p>
+
 ## Getting Started
 
 You can use this package very easily.
@@ -12,7 +17,7 @@ You need to add this lines to your `pubspec.yaml` :
 
 ```yaml
 dependencie:
-    stats_animation: ^1.0.1
+    stats_animation: ^1.0.2
 ```
 
 ## Usage
